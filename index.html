@@ -41,14 +41,16 @@
         });
       // YouTube Search
       document.getElementById("search-field").addEventListener("keydown",  event => { 
-            if (event.keyCode === 89) {
+            if (event.shiftKey && event.keyCode === 89) {
+              event.preventDefault();
                 var val = document.getElementById("search-field").value;
                 window.open("https://www.youtube.com/results?search_query=" + val);
             }
         });
       // ArchWiki Search
       document.getElementById("search-field").addEventListener("keydown",  event => { 
-            if (event.keyCode === 65) {
+            if (event.shiftKey && event.keyCode === 65) {
+              event.preventDefault();
                 var val = document.getElementById("search-field").value;
                 window.open("https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=" + val);
             }
