@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 
 :root {
-  --bg: #212121;
+  --bg: #3f3f3f;
   --fg: #ffffff;
   --secondaryFg: #b3b3b3;
   --containerBg: #272727;
@@ -11,8 +11,8 @@
 }
 
 body {
-  background-image: url("sun-dark.jpg");
-  background-size: cover;
+  background-color: var(--bg);
+  margin: 0px;
 }
 
 .container {
