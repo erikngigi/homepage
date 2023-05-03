@@ -20,14 +20,13 @@ const bookmarks = [
       { name: "Nyaa", url: "https://nyaa.si/" },
     ],
   },
-
   {
-    title: "Arch Linux"
+    title: "Arch Linux",
     links: [
       { name: "ArchWiki", url: "https://wiki.archlinux.org/" },
       { name: "Packages", url: "https://archlinux.org/packages/" },
       { name: "AUR", url: "https://aur.archlinux.org/" },
       { name: "News", url: "https://archlinux.org/" },
-    ]
-  }
+    ],
+  },
 ];

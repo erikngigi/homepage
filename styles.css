@@ -12,7 +12,6 @@
 
 body {
   background-color: var(--bg);
-  background-image: url("background.jpg")
   margin: 0px;
 }
 
