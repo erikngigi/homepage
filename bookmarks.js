@@ -3,7 +3,7 @@ const bookmarks = [
   {
     title: "Daily",
     links: [
-      { name: "EricNgigi", url: "https://ericngigi.netlify.app/" },
+      { name: "Eric Ngigi", url: "https://ericngigi.netlify.app/" },
       { name: "Inbox", url: "https://inbox.google.com" },
       { name: "GitHub", url: "https://github.com/ErikNgigi" },
       { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
@@ -41,7 +41,7 @@ const bookmarks = [
     links: [
       { name: "Indeed", url: "https://www.indeed.com/" },
       { name: "Fuzu", url: "https://www.fuzu.com/kenya" },
-      { name: "Open Source Jobs", url: "https://opensourcejobhub.com/" },
+      { name: "Open Source", url: "https://opensourcejobhub.com/" },
     ],
   },
 ];
