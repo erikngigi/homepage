@@ -29,4 +29,11 @@ const bookmarks = [
       { name: "News", url: "https://archlinux.org/" },
     ],
   },
+  {
+    title: "Coding",
+    links: [
+      { name: "HackerRank", url: "https://www.hackerrank.com/" },
+      { name: "LeetCode", url: "https://leetcode.com/" },
+    ],
+  },
 ];

@@ -32,14 +32,27 @@
 
     <script src="bookmarks.js"></script>
     <script>
-      const searchUrl = "https://google.com/search?q=";
-      // Search on enter key event
-      function search(e) {
-        if (e.keyCode == 13) {
-          var val = document.getElementById("search-field").value;
-          window.open(searchUrl + val);
-        }
-      }
+      // Google Search
+      document.getElementById("search-field").addEventListener("keydown",  event => { 
+            if (event.keyCode === 13) {
+                var val = document.getElementById("search-field").value;
+                window.open("https://google.com/search?q=" + val);
+            }
+        });
+      // YouTube Search
+      document.getElementById("search-field").addEventListener("keydown",  event => { 
+            if (event.keyCode === 89) {
+                var val = document.getElementById("search-field").value;
+                window.open("https://www.youtube.com/results?search_query=" + val);
+            }
+        });
+      // ArchWiki Search
+      document.getElementById("search-field").addEventListener("keydown",  event => { 
+            if (event.keyCode === 65) {
+                var val = document.getElementById("search-field").value;
+                window.open("https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=" + val);
+            }
+        });
       // Get current time and format
       function getTime() {
         let date = new Date(),
@@ -97,6 +110,15 @@
             return html.join("");
           })
           .join("");
+      }
+
+      var youtubeSearchUrl = "https://www.youtube.com/results?search_query="
+      // Search on enter key event
+      function search(e) {
+        if (e.keyCode == 89) {
+          var val = document.getElementById("search-field").value;
+          window.open(youtubeSearchUrl + val);
+        }
       }
 
       window.onload = () => {
