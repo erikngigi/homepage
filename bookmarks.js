@@ -36,4 +36,12 @@ const bookmarks = [
       { name: "LeetCode", url: "https://leetcode.com/" },
     ],
   },
+  {
+    title: "Jobs Search",
+    links: [
+      { name: "Indeed", url: "https://www.indeed.com/" },
+      { name: "Fuzu", url: "https://www.fuzu.com/kenya" },
+      { name: "Open Source Jobs", url: "https://opensourcejobhub.com/" },
+    ],
+  },
 ];

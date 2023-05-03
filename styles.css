@@ -7,12 +7,12 @@
   --containerBg: #272727;
   --searchBg: var(--containerBg);
   --scrollbarColor: #3f3f3f;
-  --fontFamily: 'Roboto Mono', monospace;
+  --fontFamily: 'JetBrains Mono', monospace;
 }
 
 body {
-  background-color: var(--bg);
-  margin: 0px;
+  background-image: url("sun-dark.jpg");
+  background-size: cover;
 }
 
 .container {
