@@ -114,15 +114,6 @@
           .join("");
       }
 
-      var youtubeSearchUrl = "https://www.youtube.com/results?search_query="
-      // Search on enter key event
-      function search(e) {
-        if (e.keyCode == 89) {
-          var val = document.getElementById("search-field").value;
-          window.open(youtubeSearchUrl + val);
-        }
-      }
-
       window.onload = () => {
         setupBookmarks();
         getWeather();
