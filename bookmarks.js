@@ -3,7 +3,7 @@ const bookmarks = [
   {
     title: "Daily",
     links: [
-      { name: "Eric Ngigi", url: "https://ericngigi.netlify.app/" },
+      { name: "MyWebsite", url: "https://ericngigi.netlify.app/" },
       { name: "Inbox", url: "https://inbox.google.com" },
       { name: "GitHub", url: "https://github.com/ErikNgigi" },
       { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
