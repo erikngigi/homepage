@@ -158,10 +158,14 @@ td:first-child {
   border-radius: 3px;
   font-family: var(--fontFamily);
   font-size: 0.85rem;
-  width: 25%;
+  width: 50%;
   height: 16em;
   margin: 0em 0.5em;
   box-sizing: border-box;
+  border-top: solid 0.5px var(--secondaryFg);
+  border-bottom: solid 0.5px var(--secondaryFg);
+  border-left: solid 0.5px var(--secondaryFg);
+  border-right: solid 0.5px var(--secondaryFg);
 }
 
 .bookmark-inner-container {
@@ -187,7 +191,7 @@ td:first-child {
 }
 
 .bookmark-title {
-  font-size: 1.1rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: var(--fg);
   margin: 0em 0em 0.35em 0em;
@@ -200,4 +204,5 @@ td:first-child {
 }
 .bookmark:hover {
   color: var(--fg);
+  border-bottom: 0.65px solid var(--fg);
 }
