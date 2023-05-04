@@ -127,19 +127,6 @@ td:first-child {
   text-align: center;
 }
 
-.weather-container {
-  width: 30%;
-  background-color: var(--containerBg);
-  padding: 1em;
-  border-radius: 3px;
-  font-family: var(--fontFamily);
-  color: var(--fg);
-  text-align: center;
-}
-.inline {
-  display: inline-block;
-}
-
 #bookmark-container {
   display: flex;
   flex-direction: row;
