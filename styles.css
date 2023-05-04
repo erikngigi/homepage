@@ -119,7 +119,7 @@ td:first-child {
   background-color: var(--searchBg);
   border: solid 0px var(--searchBg);
   font-family: var(--fontFamily);
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--fg);
   outline: none;
   border-radius: 3px;
@@ -170,7 +170,7 @@ td:first-child {
   background-color: var(--containerBg);
   border-radius: 3px;
   font-family: var(--fontFamily);
-  font-size: 1.00rem;
+  font-size: 0.85rem;
   width: 25%;
   height: 12em;
   margin: 0em 0.5em;
