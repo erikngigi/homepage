@@ -65,27 +65,25 @@
       // Google Search
       document.getElementById("search-field").addEventListener("keydown",  event => { 
             if (event.keyCode === 13) {
-                var val = document.getElementById("search-field").value;
-                window.open("https://google.com/search?q=" + val);
-              returnToHomePage();
+              event.preventDefault();
+              var val = document.getElementById("search-field").value;
+              window.location.href = ("https://google.com/search?q=" + val);
             }
         });
       // YouTube Search
       document.getElementById("search-field").addEventListener("keydown",  event => { 
             if (event.shiftKey && event.keyCode === 89) {
               event.preventDefault();
-                var val = document.getElementById("search-field").value;
-                window.open("https://www.youtube.com/results?search_query=" + val);
-              returnToHomePage();
+              var val = document.getElementById("search-field").value;
+              window.location.href = ("https://www.youtube.com/results?search_query=" + val);
             }
         });
       // ArchWiki Search
       document.getElementById("search-field").addEventListener("keydown",  event => { 
             if (event.shiftKey && event.keyCode === 65) {
               event.preventDefault();
-                var val = document.getElementById("search-field").value;
-                window.open("https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=" + val);
-              returnToHomePage();
+              var val = document.getElementById("search-field").value;
+              window.location.href = ("https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=" + val);
             }
         });
       // Get current time and format
@@ -115,7 +113,7 @@
             html.push(
               ...b.links.map(
                 (l) =>
-                  `<a class="bookmark" href="${l.url}" target="_blank">${l.name}</a>`
+                  `<a class="bookmark" href="${l.url}" href="${l.url}">${l.name}</a>`
               )
             );
             html.push("</div></div>");
@@ -126,7 +124,6 @@
 
       window.onload = () => {
         setupBookmarks();
-        getWeather();
         // Set up the clock
         document.getElementById("clock").innerHTML = getTime();
         // Set clock interval to tick clock
