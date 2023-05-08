@@ -133,6 +133,7 @@ td:first-child {
   justify-content: center;
   width: 70%;
   margin: 1em 0em;
+  text-align: center;
 }
 
 @media only screen and (max-width: 960px) {
