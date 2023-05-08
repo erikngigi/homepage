@@ -3,7 +3,7 @@ const bookmarks = [
   {
     title: "Daily",
     links: [
-      { name: "MyWebsite", url: "https://ericngigi.netlify.app/" },
+      { name: "Eric Ngigi Website", url: "https://ericngigi.netlify.app/" },
       { name: "Inbox", url: "https://inbox.google.com" },
       { name: "GitHub", url: "https://github.com/ErikNgigi" },
       { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
@@ -47,6 +47,7 @@ const bookmarks = [
   {
     title: "Sandbox",
     links: [
+      { name: "Localhost:Crater", url: "https://localhost" },
       { name: "Localhost:8080", url: "http://localhost:8080" },
       { name: "LocalHost:8082", url: "http://localhost:8082/phpmyadmin/" },
       { name: "LocalHost:1313", url: "http://localhost:1313" },
