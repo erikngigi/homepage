@@ -59,8 +59,11 @@
 
     <script src="bookmarks.js"></script>
     <script>
-      function returnToHomePage() {
-        window.location.href = "https://erikngigi.github.io/chromium-homepage/"
+      // Prevent search highlighting
+      function openNewTab(url) {
+        const searchBar = document.getElementById('search-field');
+        searchBar.classList.remove('highlight');
+        windows.open(url, '_blank');
       }
       // Google Search
       document.getElementById("search-field").addEventListener("keydown",  event => { 
@@ -68,6 +71,7 @@
               event.preventDefault();
               var val = document.getElementById("search-field").value;
               window.location.href = ("https://google.com/search?q=" + val);
+              openNewTab(url);
             }
         });
       // YouTube Search
@@ -76,6 +80,7 @@
               event.preventDefault();
               var val = document.getElementById("search-field").value;
               window.location.href = ("https://www.youtube.com/results?search_query=" + val);
+              openNewTab(url);
             }
         });
       // ArchWiki Search
@@ -84,6 +89,7 @@
               event.preventDefault();
               var val = document.getElementById("search-field").value;
               window.location.href = ("https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=" + val);
+              openNewTab(url);
             }
         });
       // Get current time and format
