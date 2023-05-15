@@ -3,12 +3,11 @@ const bookmarks = [
   {
     title: "Daily",
     links: [
-      { name: "Eric Ngigi Website", url: "https://ericngigi.netlify.app/" },
-      { name: "Inbox", url: "https://inbox.google.com" },
+      { name: "Website", url: "https://ericngigi.netlify.app/" },
       { name: "GitHub", url: "https://github.com/ErikNgigi" },
       { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
       { name: "ChatGPT", url: "https://chat.openai.com/" },
-      { name: "ALX", url: "https://member.theroom.com/alx/" },
+      { name: "ALX Learning", url: "https://member.theroom.com/alx/" },
     ],
   },
   {
@@ -43,6 +42,15 @@ const bookmarks = [
       { name: "Indeed", url: "https://www.indeed.com/" },
       { name: "Fuzu", url: "https://www.fuzu.com/kenya" },
       { name: "Open Source", url: "https://opensourcejobhub.com/" },
+    ],
+  },
+  {
+    title: "Email Accounts",
+    links: [
+      { name: "ericwanyoike", url: "https://mail.google.com/mail/u/?authuser=ericwanyoike@gmail.com" },
+      { name: "ericmosesngigi", url: "https://mail.google.com/mail/u/?authuser=ericmosesngigi@gmail.com" },
+      { name: "ericwanyoike772", url: "https://mail.google.com/mail/u/?authuser=ericwanyoike772@gmail.com" },
+      { name: "ericthegiggs", url: "https://mail.google.com/mail/u/?authuser=ericthegiggs@gmail.com" },
     ],
   },
   {

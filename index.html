@@ -45,12 +45,20 @@
             <td>Google Search</td>
           </tr>
           <tr>
-            <td>Shift + Y</td>
-            <td>YouTube Search</td>
-          </tr>
-          <tr>
             <td>Shift + A</td>
             <td>ArchWiki Search</td>
+          </tr>
+          <tr>
+            <td>Shift + N</td>
+            <td>Nyaa Anime Search</td>
+          </tr>
+          <tr>
+            <td>Shift + R</td>
+            <td>RARBG Search</td>
+          </tr>
+            <tr>
+            <td>Shift + Y</td>
+            <td>YouTube Search</td>
           </tr>
         </tbody>
        </table> 
@@ -89,6 +97,24 @@
               event.preventDefault();
               var val = document.getElementById("search-field").value;
               window.location.href = ("https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=" + val);
+              openNewTab(url);
+            }
+        });
+      // Nyaa Anime Search
+      document.getElementById("search-field").addEventListener("keydown",  event => { 
+            if (event.shiftKey && event.keyCode === 78) {
+              event.preventDefault();
+              var val = document.getElementById("search-field").value;
+              window.location.href = ("https://nyaa.si/?f=0&c=1_2&q=" + val);
+              openNewTab(url);
+            }
+        });
+      // RARBG Search
+      document.getElementById("search-field").addEventListener("keydown",  event => { 
+            if (event.shiftKey && event.keyCode === 82) {
+              event.preventDefault();
+              var val = document.getElementById("search-field").value;
+              window.location.href = ("https://rarbgget.org/torrents.php?search=" + val);
               openNewTab(url);
             }
         });
