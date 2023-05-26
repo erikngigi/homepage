@@ -8,6 +8,11 @@ const bookmarks = [
       { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
       { name: "ChatGPT", url: "https://chat.openai.com/" },
       { name: "ALX", url: "https://member.theroom.com/alx/" },
+      { name: "HackerRank", url: "https://www.hackerrank.com/" },
+      { name: "LeetCode", url: "https://leetcode.com/" },
+      { name: "Indeed", url: "https://www.indeed.com/" },
+      { name: "Fuzu", url: "https://www.fuzu.com/kenya" },
+      { name: "OpenSource", url: "https://opensourcejobhub.com/" },
     ],
   },
   {
@@ -30,21 +35,6 @@ const bookmarks = [
     ],
   },
   {
-    title: "Coding",
-    links: [
-      { name: "HackerRank", url: "https://www.hackerrank.com/" },
-      { name: "LeetCode", url: "https://leetcode.com/" },
-    ],
-  },
-  {
-    title: "Jobs Search",
-    links: [
-      { name: "Indeed", url: "https://www.indeed.com/" },
-      { name: "Fuzu", url: "https://www.fuzu.com/kenya" },
-      { name: "OpenSource", url: "https://opensourcejobhub.com/" },
-    ],
-  },
-  {
     title: "G-Suite",
     links: [
       { name: "Eric Wanyoike", url: "https://mail.google.com/mail/u/?authuser=ericwanyoike@gmail.com" },
@@ -59,8 +49,8 @@ const bookmarks = [
       { name: "Drive", url: "https://drive.google.com/?authuser=1" },
       { name: "Chats", url: "https://chat.google.com/?authuser=1" },
       { name: "Calender", url: "https://calendar.google.com/calendar?authuser=1" },
-      // { name: "ericwanyoike772", url: "https://mail.google.com/mail/u/?authuser=ericwanyoike772@gmail.com" },
-      // { name: "ericthegiggs", url: "https://mail.google.com/mail/u/?authuser=ericthegiggs@gmail.com" },
+      { name: "ericwanyoike772", url: "https://mail.google.com/mail/u/?authuser=ericwanyoike772@gmail.com" },
+      { name: "ericthegiggs", url: "https://mail.google.com/mail/u/?authuser=ericthegiggs@gmail.com" },
     ],
   },
   {
