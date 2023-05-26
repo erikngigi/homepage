@@ -18,7 +18,7 @@ const bookmarks = [
   {
     title: "Media",
     links: [
-      { name: "Youtube", url: "https://youtube.com" },
+      { name: "YouTube", url: "https://youtube.com" },
       { name: "Pahe", url: "https://pahe.li" },
       { name: "RARBG", url: "https://rarbgget.org/torrents.php"},
       { name: "Kitsu", url: "https://kitsu.io/explore/anime" },
