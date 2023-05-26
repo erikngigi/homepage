@@ -51,11 +51,11 @@ thead {
   background-color: var(--containerBg);
   color: var(--fg);
   font-size: 1.00rem;
-  border-top: solid 0.5px var(--secondaryFg);
-  border-bottom: solid 0.5px var(--secondaryFg);
-  border-left: solid 0.5px var(--secondaryFg);
-  border-right: solid 0.5px var(--secondaryFg); 
-  padding: 0.5em 1em;
+  /* border-top: solid 0.5px var(--secondaryFg); */
+  /* border-bottom: solid 0.5px var(--secondaryFg); */
+  /* border-left: solid 0.5px var(--secondaryFg); */
+  /* border-right: solid 0.5px var(--secondaryFg);  */
+  /* padding: 0.5em 1em; */
 }
 
 th {
@@ -65,9 +65,9 @@ th {
   background-color: var(--containerBg);
   color: var(--fg);
   border-bottom: solid 0.5px var(--secondaryFg);
-  border-left: solid 0.5px var(--secondaryFg);
-  border-right: solid 0.5px var(--secondaryFg);
-  padding: 0.5em 1em;
+  /* border-left: solid 0.5px var(--secondaryFg); */
+  /* border-right: solid 0.5px var(--secondaryFg); */
+  /* padding: 0.5em 1em; */
 }
 
 tbody tr:nth-child(even) {
@@ -83,9 +83,9 @@ td {
   padding: 0.5em;
   color: var(--fg);
   border-bottom: solid 0.5px var(--secondaryFg);
-  border-left: solid 0.5px var(--secondaryFg);
-  border-right: solid 0.5px var(--secondaryFg);
-  padding: 0.5em 1em; 
+  /* border-left: solid 0.5px var(--secondaryFg); */
+  /* border-right: solid 0.5px var(--secondaryFg); */
+  /* padding: 0.5em 1em;  */
 }
 
 td:first-child {
@@ -165,10 +165,10 @@ td:first-child {
   height: 16em;
   margin: 0em 0.5em;
   box-sizing: border-box;
-  border-top: solid 0.5px var(--secondaryFg);
-  border-bottom: solid 0.5px var(--secondaryFg);
-  border-left: solid 0.5px var(--secondaryFg);
-  border-right: solid 0.5px var(--secondaryFg);
+  /* border-top: solid 0.5px var(--secondaryFg); */
+  /* border-bottom: solid 0.5px var(--secondaryFg); */
+  /* border-left: solid 0.5px var(--secondaryFg); */
+  /* border-right: solid 0.5px var(--secondaryFg); */
 }
 
 .bookmark-inner-container {
