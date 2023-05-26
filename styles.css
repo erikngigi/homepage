@@ -35,13 +35,14 @@ body {
 }
 
 #keybindings {
-  width: 50%;
+  width: 30%;
   margin: 0 auto;
   margin-top: 2em;
   font-family: var(--fontFamily)
 }
 
 table {
+  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   margin-top: 2em;
@@ -78,7 +79,7 @@ tbody tr:nth-child(even) {
 
 td {
   text-align: center;
-  font-size: 1.00rem;
+  font-size: 0.9rem;
   background-color: var(--containerBg);
   padding: 0.5em;
   color: var(--fg);
@@ -95,7 +96,7 @@ td:first-child {
 
 #clock {
   font-family: sans-serif;
-  font-size: 5.5rem;
+  font-size: 3.5rem;
   font-weight: 600;
   font-family: var(--fontFamily);
   color: var(--fg);
