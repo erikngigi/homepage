@@ -56,10 +56,10 @@ const bookmarks = [
   {
     title: "Sandbox Testing",
     links: [
-      { name: "Localhost:Crater", url: "http://localhost/" },
-      { name: "Localhost:8080", url: "http://localhost:8080" },
-      { name: "LocalHost:8082", url: "http://localhost/phpmyadmin" },
-      { name: "LocalHost:1313", url: "http://localhost/hugo" },
+      // { name: "Localhost:Crater", url: "http://localhost/" },
+      // { name: "Localhost:8080", url: "http://localhost:8080" },
+      { name: "PHPMyAdmin", url: "http://localhost/phpmyadmin" },
+      { name: "Hugo", url: "http://localhost/hugo" },
     ],
   },
 ];
