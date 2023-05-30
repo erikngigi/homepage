@@ -5,6 +5,7 @@ const bookmarks = [
     links: [
       { name: "Website", url: "https://ericngigi.netlify.app/" },
       { name: "GitHub", url: "https://github.com/ErikNgigi" },
+      { name: "Netlify", url: "https://app.netlify.com/teams/erikngigi/overview" },
       { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
       { name: "ChatGPT", url: "https://chat.openai.com/" },
       { name: "ALX", url: "https://member.theroom.com/alx/" },
