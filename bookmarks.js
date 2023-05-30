@@ -3,9 +3,10 @@ const bookmarks = [
   {
     title: "Daily",
     links: [
-      { name: "Website", url: "https://ericngigi.netlify.app/" },
+      { name: "Eric Ngigi", url: "https://ericngigi.com" },
       { name: "GitHub", url: "https://github.com/ErikNgigi" },
       { name: "Netlify", url: "https://app.netlify.com/teams/erikngigi/overview" },
+      { name: "Website", url: "https://ericngigi.netlify.app" },
       { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
       { name: "ChatGPT", url: "https://chat.openai.com/" },
       { name: "ALX", url: "https://member.theroom.com/alx/" },
@@ -24,6 +25,7 @@ const bookmarks = [
       { name: "RARBG", url: "https://rarbgget.org/torrents.php"},
       { name: "Kitsu", url: "https://kitsu.io/explore/anime" },
       { name: "Nyaa", url: "https://nyaa.si/" },
+      { name: "GogoAnime", url: "https://gogoanime.cl/" },
     ],
   },
   {
