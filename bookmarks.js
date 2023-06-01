@@ -10,6 +10,7 @@ const bookmarks = [
       { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
       { name: "ChatGPT", url: "https://chat.openai.com/" },
       { name: "ALX", url: "https://member.theroom.com/alx/" },
+      { name: "TOP", url: "https://www.theodinproject.com/dashboard" },
       { name: "HackerRank", url: "https://www.hackerrank.com/" },
       { name: "LeetCode", url: "https://leetcode.com/" },
       { name: "Indeed", url: "https://www.indeed.com/" },

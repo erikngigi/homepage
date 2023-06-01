@@ -139,7 +139,7 @@ td:first-child {
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
   .container {
     height: auto;
   }
