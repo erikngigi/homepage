@@ -64,6 +64,7 @@ const bookmarks = [
       // { name: "Localhost:8080", url: "http://localhost:8080" },
       { name: "PHPMyAdmin", url: "http://localhost:8080/phpmyadmin/" },
       { name: "Hugo", url: "http://localhost:1313" },
+      { name: "Algoendeavours", url: "http://localhost:8080/algoendeavours/" },
     ],
   },
 ];
