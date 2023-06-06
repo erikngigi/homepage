@@ -62,9 +62,9 @@ const bookmarks = [
     links: [
       // { name: "Localhost:Crater", url: "http://localhost/" },
       // { name: "Localhost:8080", url: "http://localhost:8080" },
+      { name: "Algoendeavours", url: "http://localhost:8080/algoendeavours/" },
       { name: "PHPMyAdmin", url: "http://localhost:8080/phpmyadmin/" },
       { name: "Hugo", url: "http://localhost:1313" },
-      { name: "Algoendeavours", url: "http://localhost:8080/algoendeavours/" },
     ],
   },
 ];
