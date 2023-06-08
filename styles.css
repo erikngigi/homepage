@@ -107,7 +107,7 @@ body {
 }
 
 #search-field {
-  width: 50%;
+  width: 100%;
   padding: 0.75em 1em;
   box-sizing: border-box;
   background-color: var(--homepageBg);
@@ -115,7 +115,7 @@ body {
   font-family: var(--fontFamily);
   font-size: 2.5rem;
   color: var(--fg);
-  outline: none;
+  outline: dashed green;
   border-radius: 3px;
   margin-bottom: 1em;
   text-align: center;
