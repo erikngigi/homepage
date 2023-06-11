@@ -154,7 +154,7 @@ td:first-child {
   font-family: var(--fontFamily);
   font-size: 1.0rem;
   width: 70%;
-  height: 16em;
+  height: 30em;
   margin: 0em 0.5em;
   box-sizing: border-box;
   /* border-top: solid 0.5px var(--secondaryFg); */
@@ -165,7 +165,7 @@ td:first-child {
 
 .bookmark-inner-container {
   overflow-y: scroll;
-  height: 70%;
+  height: 95%;
   vertical-align: top;
   padding-right: 6px;
   box-sizing: border-box;
