@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto+Mono'); */
 
 :root {
   --bg: #3f3f3f;
@@ -8,7 +8,7 @@
   --containerBg: #272727;
   --searchBg: var(--);
   --scrollbarColor: #3f3f3f;
-  --fontFamily: 'Roboto Mono', monospace;
+  /* --fontFamily: 'Roboto Mono', monospace; */
 }
 
 body {
@@ -29,7 +29,7 @@ body {
   width: 30%;
   margin: 0 auto;
   margin-top: 2em;
-  font-family: var(--fontFamily)
+  /* font-family: var(--fontFamily) */
 }
 
 table {
@@ -82,7 +82,7 @@ td {
 
 td:first-child {
   font-weight: 600;
-  font-family: var(--fontFamily);
+  /* font-family: var(--fontFamily); */
 }
 
 /* #clock { */
@@ -112,7 +112,7 @@ td:first-child {
   box-sizing: border-box;
   background-color: var(--homepageBg);
   border: solid 0px var(--homepageBg);
-  font-family: var(--fontFamily);
+  /* font-family: var(--fontFamily); */
   font-size: 2.5rem;
   color: var(--fg);
   outline: 1px dashed green;
@@ -151,10 +151,10 @@ td:first-child {
   padding: 1em;
   background-color: var(--containerBg);
   border-radius: 3px;
-  font-family: var(--fontFamily);
-  font-size: 1.0rem;
-  width: 80%;
-  height: 20em;
+  /* font-family: var(--fontFamily); */
+  font-size: 1.1rem;
+  width: 90%;
+  height: 25em;
   margin: 0em 0.5em;
   box-sizing: border-box;
   /* border-top: solid 0.5px var(--secondaryFg); */
@@ -165,7 +165,7 @@ td:first-child {
 
 .bookmark-inner-container {
   overflow-y: scroll;
-  height: 89%;
+  height: 93%;
   vertical-align: top;
   padding-right: 6px;
   box-sizing: border-box;
