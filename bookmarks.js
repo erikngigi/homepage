@@ -4,16 +4,22 @@ const bookmarks = [
     title: "Daily",
     links: [
       { name: "Eric Ngigi", url: "https://ericngigi.com" },
-      { name: "GitHub", url: "https://github.com/ErikNgigi" },
-      { name: "Netlify", url: "https://app.netlify.com/teams/erikngigi/overview" },
-      { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
       { name: "ChatGPT", url: "https://chat.openai.com/" },
-      { name: "ALX", url: "https://member.theroom.com/alx/" },
       { name: "TOP", url: "https://www.theodinproject.com/dashboard" },
       { name: "HackerRank", url: "https://www.hackerrank.com/" },
       { name: "Indeed", url: "https://www.indeed.com/" },
       { name: "Fuzu", url: "https://www.fuzu.com/kenya" },
       { name: "OpenSource", url: "https://opensourcejobhub.com/" },
+    ],
+  },
+  {
+    title: "Work",
+    links: [
+      { name: "GitHub", url: "https://github.com/ErikNgigi" },
+      { name: "Netlify", url: "https://app.netlify.com/teams/erikngigi/overview" },
+      { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
+      { name: "WriterBay", url: "https://www.writerbay.com/" },
+      { name: "ALX", url: "https://member.theroom.com/alx/" },
     ],
   },
   {
