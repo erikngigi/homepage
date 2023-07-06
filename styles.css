@@ -104,7 +104,7 @@ td:first-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 70%;
+  width: 55%;
   margin: 1em 0em;
   text-align: left;
 }
