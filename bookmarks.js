@@ -10,6 +10,7 @@ const bookmarks = [
       { name: "Indeed", url: "https://www.indeed.com/" },
       { name: "Fuzu", url: "https://www.fuzu.com/kenya" },
       { name: "OpenSource", url: "https://opensourcejobhub.com/" },
+      { name: "PayPal", url: "https://www.paypal.com/ke/home" },
     ],
   },
   {
@@ -20,6 +21,7 @@ const bookmarks = [
       { name: "Linkedin", url: "https://www.linkedin.com/in/eric-ngigi-073b72153/" },
       { name: "WriterBay", url: "https://www.writerbay.com/" },
       { name: "ALX", url: "https://member.theroom.com/alx/" },
+      { name: "Scribie", url: "https://scribie.com/transcription-test#files" },
     ],
   },
   {
