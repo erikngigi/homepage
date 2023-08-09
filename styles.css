@@ -96,6 +96,15 @@ td:first-child {
   text-align: left;
 }
 
+#another-bookmark-container {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+  margin: 1em 0;
+  text-align: left;
+}
+
+
 @media only screen and (max-width: 1080px) {
   .container {
     min-height: auto;

@@ -48,9 +48,9 @@ const bookmarks = [
   {
     title: "Local",
     links: [
-      { name: "local/hugo", url: "http://localhost:1313" },
-      { name: "local/algoendeavours", url: "http://localhost:8080/algoendeavours/" },
-      { name: "local/php-my-admin", url: "http://localhost:8080/phpmyadmin/" },
+      { name: "hugo", url: "http://localhost:1313" },
+      { name: "algoendeavours", url: "http://localhost:8080/algoendeavours/" },
+      { name: "php-my-admin", url: "http://localhost:8080/phpmyadmin/" },
     ],
   },
 ];
