@@ -1,106 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
-  </head>
-  <body>
-    <div id="search">
-      <input
-        id="search-field"
-        type="text"
-        name="search-field"
-        onkeypress="return search(event)"
-      />
-    </div>
-    <div class="container">
-      <div id="bookmark-container"></div>
-    </div>
 
-    <script src="bookmarks.js"></script>
-    <script>
-      // Prevent search highlighting
-      function openNewTab(url) {
-        const searchBar = document.getElementById('search-field');
-        searchBar.classList.remove('highlight');
-        windows.open(url, '_blank');
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div id="search">
+    <input id="search-field" type="text" name="search-field">
+  </div>
+  <div class="container">
+    <div id="bookmark-container"></div>
+  </div>
+
+  <script src="bookmarks.js"></script>
+  <script>
+    // Prevent search highlighting
+    function openNewTab(url) {
+      const searchBar = document.getElementById('search-field');
+      searchBar.classList.remove('highlight');
+      window.open(url, '_blank');
+    }
+
+    // Search function
+    function performSearch(query, url) {
+      event.preventDefault();
+      window.location.href = url + encodeURIComponent(query);
+      openNewTab(url);
+    }
+
+    // Set up event listeners
+    document.getElementById("search-field").addEventListener("keydown", event => {
+      if (event.keyCode === 13) { // Enter key
+        var val = document.getElementById("search-field").value;
+        performSearch(val, 'https://google.com/search?q=');
       }
-      // Google Search
-      document.getElementById("search-field").addEventListener("keydown",  event => { 
-            if (event.keyCode === 13) {
-              event.preventDefault();
-              var val = document.getElementById("search-field").value;
-              window.location.href = ("https://google.com/search?q=" + val);
-              openNewTab(url);
-            }
-        });
-      // YouTube Search
-      document.getElementById("search-field").addEventListener("keydown",  event => { 
-            if (event.shiftKey && event.keyCode === 89) {
-              event.preventDefault();
-              var val = document.getElementById("search-field").value;
-              window.location.href = ("https://www.youtube.com/results?search_query=" + val);
-              openNewTab(url);
-            }
-        });
-      // ArchWiki Search
-      document.getElementById("search-field").addEventListener("keydown",  event => { 
-            if (event.shiftKey && event.keyCode === 65) {
-              event.preventDefault();
-              var val = document.getElementById("search-field").value;
-              window.location.href = ("https://wiki.archlinux.org/index.php?title=Special%3ASearch&search=" + val);
-              openNewTab(url);
-            }
-        });
-      // Nyaa Anime Search
-      document.getElementById("search-field").addEventListener("keydown",  event => { 
-            if (event.shiftKey && event.keyCode === 78) {
-              event.preventDefault();
-              var val = document.getElementById("search-field").value;
-              window.location.href = ("https://nyaa.si/?f=0&c=1_2&q=" + val);
-              openNewTab(url);
-            }
-        });
-      // Handle writing out Bookmarks
-      function setupBookmarks() {
-        const bookmarkContainer = document.getElementById("bookmark-container");
-        bookmarkContainer.innerHTML = bookmarks
-          .map((b) => {
-            const html = ["<div class='bookmark-set'>"];
-            html.push(`<div class="bookmark-title">${b.title}</div>`);
-            html.push('<div class="bookmark-inner-container">');
-            html.push(
-              ...b.links.map(
-                (l) =>
-                  `<a class="bookmark" href="${l.url}" href="${l.url}">${l.name}</a>`
-              )
-            );
-            html.push("</div></div>");
-            return html.join("");
-          })
-          .join("");
+    });
+
+    // Handle writing out Bookmarks
+    function setupBookmarks() {
+      const bookmarkContainer = document.getElementById("bookmark-container");
+      bookmarkContainer.innerHTML = bookmarks.map(b => {
+        return `
+          <div class='bookmark-set'>
+            <div class="bookmark-title">${b.title}</div>
+            <div class="bookmark-inner-container">
+              ${b.links.map(l => `<a class="bookmark" href="${l.url}">${l.name}</a>`).join('')}
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // Initialize bookmarks on window load
+    window.onload = setupBookmarks;
+
+    // Set up event listener for opening and closing search
+    document.addEventListener("keyup", event => {
+      const searchDiv = document.getElementById("search");
+      const searchField = document.getElementById("search-field");
+
+      if (event.keyCode === 32) { // Spacebar
+        searchDiv.style.display = "flex";
+        searchField.focus();
+      } else if (event.keyCode === 27) { // Esc key
+        searchField.value = "";
+        searchField.blur();
+        searchDiv.style.display = "none";
       }
+    });
+  </script>
+</body>
 
-      window.onload = () => {
-        setupBookmarks();
-      };
-
-      document.addEventListener("keyup", (event) => {
-        if (event.keyCode == 32) {
-          // Spacebar code to open search
-          document.getElementById("search").style.display = "flex";
-          document.getElementById("search-field").focus();
-        } else if (event.keyCode == 27) {
-          // Esc to close search
-          document.getElementById("search-field").value = "";
-          document.getElementById("search-field").blur();
-          document.getElementById("search").style.display = "none";
-        }
-      });
-    </script>
-  </body>
 </html>

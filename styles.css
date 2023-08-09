@@ -6,58 +6,47 @@
   --homepageBg: #000000;
   --secondaryFg: #b3b3b3;
   --containerBg: #272727;
-  --searchBg: var(--);
   --scrollbarColor: #3f3f3f;
 }
 
 body {
+  margin: 0;
   background-color: var(--containerBg);
-  margin: 0px;
 }
 
 .container {
-  width: 100%;
-  height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
 }
 
 table {
-  table-layout: fixed;
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   margin-top: 2em;
 }
 
-thead {
+thead,
+th {
   background-color: var(--containerBg);
   color: var(--fg);
-  font-size: 1.00rem;
-  border-top: solid 0.5px var(--secondaryFg);
-  border-bottom: solid 0.5px var(--secondaryFg);
-  border-left: solid 0.5px var(--secondaryFg);
-  border-right: solid 0.5px var(--secondaryFg); 
+  font-size: 1rem;
+  border: solid 0.5px var(--secondaryFg);
   padding: 0.5em 1em;
 }
 
 th {
   font-weight: 600;
-  padding: 0.5em;
-  font-size: 1.00rem;
-  background-color: var(--containerBg);
-  color: var(--fg);
-  border-bottom: solid 0.5px var(--secondaryFg);
-  border-left: solid 0.5px var(--secondaryFg);
-  border-right: solid 0.5px var(--secondaryFg);
-  padding: 0.5em 1em;
 }
 
 tbody tr:nth-child(even) {
   background-color: var(--containerBg);
   color: var(--fg);
-  font-size: 1.00rem;
+  font-size: 1rem;
 }
 
 td {
@@ -66,10 +55,7 @@ td {
   background-color: var(--containerBg);
   padding: 0.5em;
   color: var(--fg);
-  border-bottom: solid 0.5px var(--secondaryFg);
-  border-left: solid 0.5px var(--secondaryFg);
-  border-right: solid 0.5px var(--secondaryFg);
-  padding: 0.5em 1em; 
+  border: solid 0.5px var(--secondaryFg);
 }
 
 td:first-child {
@@ -93,7 +79,7 @@ td:first-child {
   padding: 0.75em 1em;
   box-sizing: border-box;
   background-color: var(--homepageBg);
-  border: solid 0px var(--homepageBg);
+  border: none;
   font-size: 2.5rem;
   color: var(--fg);
   outline: 1px dashed green;
@@ -104,16 +90,15 @@ td:first-child {
 
 #bookmark-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   width: 65%;
-  margin: 1em 0em;
+  margin: 1em 0;
   text-align: left;
 }
 
 @media only screen and (max-width: 1080px) {
   .container {
-    height: auto;
+    min-height: auto;
   }
   #clock {
     margin-top: 1em;
@@ -123,8 +108,14 @@ td:first-child {
     width: 100%;
   }
   #bookmark-container > .bookmark-set {
-    width: auto;
-    margin: 1em 0em;
+    margin: 1em 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container > #bookmark-container {
+    flex-direction: column;
+    align-items: center; /* Centering the sets vertically */
   }
 }
 
@@ -132,34 +123,30 @@ td:first-child {
   padding: 1em;
   background-color: var(--homepageBg);
   border-radius: 3px;
-  font-size: 1.05rem;
+  font-size: 1rem;
   text-align: center;
-  width: 100%;
-  height: 18em;
-  margin: 0em 0.5em;
+  width: 70%;
+  height: 12em;
+  margin: 0 0.5em;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .bookmark-inner-container {
-  overflow-y: scroll;
-  height: 90%;
-  vertical-align: top;
+  overflow-y: auto;
+  height: 85%;
   padding-right: 6px;
-  box-sizing: border-box;
   scrollbar-width: thin;
-  scrollbar-color: var(--scrollbarColor) #ffffff00;
+  scrollbar-color: var(--scrollbarColor) transparent;
 }
 
 .bookmark-inner-container::-webkit-scrollbar {
   width: 6px;
 }
-.bookmark-inner-container::-webkit-scrollbar-track {
-  background: #ffffff00;
-}
+
 .bookmark-inner-container::-webkit-scrollbar-thumb {
   background-color: var(--scrollbarColor);
   border-radius: 6px;
-  border: 3px solid #ffffff00;
 }
 
 .bookmark-title {
@@ -167,16 +154,17 @@ td:first-child {
   text-align: center;
   font-weight: 800;
   color: var(--blue);
-  margin: 0em 0em 0.35em 0em;
+  margin: 0 0 0.35em;
   border-bottom: 0.65px solid var(--blue);
 }
+
 .bookmark {
   text-decoration: none;
   color: #FFFFFF;
   display: block;
-  margin: 0.5em 0em;
+  margin: 0.5em 0;
 }
+
 .bookmark:hover {
   color: var(--blue);
-  /* border-bottom: 0.65px solid var(--fg); */
 }
